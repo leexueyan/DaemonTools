@@ -1,0 +1,4 @@
+#DaemonTools
+
+- 修改为静态编译版本
+- 需要安装glibc-static 
