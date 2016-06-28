@@ -29,3 +29,4 @@
 *.app
 
 admin/daemontools-0.76/compile
+linkedsee_svscan.conf
