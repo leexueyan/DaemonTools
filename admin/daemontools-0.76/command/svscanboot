@@ -1,13 +1,11 @@
 #!/bin/sh
-# WARNING: This file was auto-generated. Do not edit!
+export PATH=/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/home/DaemonTools/admin/daemontools/./command/ 
+exec < /dev/null
+exec > /dev/null
+exec 2> /dev/null
 
-PATH=/command:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin
+/home/DaemonTools/admin/daemontools/./command//svc -dx /home/DaemonTools/admin/daemontools/./services/* /home/DaemonTools/admin/daemontools/./services/*/log
 
-exec </dev/null
-exec >/dev/null
-exec 2>/dev/null
+env - PATH=$PATH /home/DaemonTools/admin/daemontools/./command//svscan /home/DaemonTools/admin/daemontools/./service 2>&1 | \
 
-/command/svc -dx /service/* /service/*/log
-
-env - PATH=$PATH svscan /service 2>&1 | \
-env - PATH=$PATH readproctitle service errors: ................................................................................................................................................................................................................................................................................................................................................................................................................
+env - PATH='$PATH' readproctitle service errors: ................................................................................................................................................................................................................................................................................................................................................................................................................ 
